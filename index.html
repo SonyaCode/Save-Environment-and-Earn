@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav>
+    <img class="logo" src="logo.png">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./upload.html">Upload</a></li>
+      <li><a href="./rewards.html">Rewards</a></li>
+    </ul>
+    <div class="sign-up">
+      <label>Sign up</label>
+    </div>
+  </nav>
+
+  <!-- Signup page -->
+  <div id="overlay">
+    <p class="exit">✖</p>
+    <div id="sign-up-form">
+      <h1 class="title">Sign up</h1>
+      <form>
+        <label class="signup-label" for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Username">
+        <br>
+        <label class="signup-label" for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+        <br>
+        <a class="forgot-pw" href="">Forgot password</a>
+        <br>
+        <button type="submit">Sign up</button>
+        
+      </form>
+    </div>
+  </div>
+
+  <!-- Status -->
+  <div class="center">
+    <h2>Hello, User!</h2>
+    <div class="infobar">
+      <div>
+        <h3>Balance</h3>
+        <!-- Circle that shows the number -->
+        <div class="circle">
+          <div class="inner-circle">
+            <p class="number">$0.00</p>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <h3>Total Hours</h3>
+        <div class="circle hours-circle-adjustment">
+          <div class="inner-circle">
+            <p class="number">0</p>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <h3>Total Tasks</h3>
+        <div class="circle tasks-circle-adjustment">
+          <div class="inner-circle">
+            <p class="number">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Daily Task <sup><img class="question-mark" src="question-mark.png"><div class="block"><p>Daily tips on how to help the environment. Try to complete as many of them!</p></div></sup></h2>
+      <div class="task-box">
+        <label class="daily-task" for="task1"><input type="checkbox" id="task1">Pick up trash.</label>
+        <label class="daily-task" for="task2"><input type="checkbox" id="task2">Recycle water bottle(s).</label>
+        <label class="daily-task" for="task3"><input type="checkbox" id="task3">Bring a reusable shopping bag when shopping.</label>
+        <label class="daily-task" for="task4"><input type="checkbox" id="task4">Travel on a bike or walking.</label>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="nearby-environmental">Nearest Environmental Voluteer Location</h2>
+      <iframe class="map" src="https://maps.google.com/maps?q=Nearest%20Environmental%20Volunteer&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no"></iframe><a href="https://technologg.com/mla-citation-generator/">
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

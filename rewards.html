@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <!-- navbar -->
+  <nav>
+    <img class="logo" src="logo.png">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./upload.html">Upload</a></li>
+      <li><a href="./rewards.html">Rewards</a></li>
+    </ul>
+    <div class="sign-up">
+      <label>Sign up</label>
+    </div>
+  </nav>
+
+  <div id="overlay">
+    <p class="exit">✖</p>
+    <div id="sign-up-form">
+      <h1 class="title">Sign up</h1>
+      <form>
+        <label class="signup-label" for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Username">
+        <br>
+        <label class="signup-label" for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+        <br>
+        <a class="forgot-pw" href="">Forgot password</a>
+        <br>
+        <button type="submit">Sign up</button>
+        
+      </form>
+    </div>
+  </div>
+
+  <form>
+    <h1>Rewards</h1>
+    <!-- Gift card options -->
+    <label class="form-font" for="gift-cards">Gift cards:</label>
+    <select class="input-space" name="gift-cards" required>
+      <option class="default-option" value="">Select</option>
+      <option class="amazon" value="amazon">Amazon</option>
+      <option class="applebees" value="applebees">Applebee's</option>
+      <option class="bestbuy" value="bestbuy">Best Buy</option>
+      <option class="chipotle" value="chipotle">Chipotle</option>
+      <option class="googleplay" value="googleplay">Google Play</option>
+      <option class="itunes" value="itunes">iTunes</option>
+      <option class="starbucks" value="starbucks">Starbucks</option>
+      <option class="sephora" value="sephora">Sephora</option>
+      <option class="target" value="target">Target</option>
+    </select>
+
+    <!-- Amount -->
+    <label class="form-font space" for="amount">Amount:</label>
+    <select class="input-space" name="amount" required>
+      <option class="default-option" value="">Select</option>
+      <option value="five">$5</option>
+      <option value="ten">$10</option>
+      <option value="twenty-five">$25</option>
+    </select>
+    
+    <input class="submit" type="submit">
+  </form>
+  
+  </div>
+</body>
+
+</html>

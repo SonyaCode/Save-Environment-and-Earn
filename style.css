@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@300&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #e2ffe9;
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: #94ffbb;
+  display: flex;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  margin-left: 15px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 27px;
+}
+
+li {
+  margin-right: 50px;
+  font-family: 'Trirong', serif;
+  font-size: 16px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  color: white;
+}
+
+.sign-up {
+  width: 100px;
+  height: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #81e5a7;
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.sign-up label {
+  position: relative;
+  top: 1px;
+  font-family: 'Trirong', serif;
+  cursor: pointer;
+}
+
+.sign-up:hover {
+  background-color: white;
+}
+
+h2 {
+  font-family: 'Trirong', serif;
+  font-size: 28px;
+  margin-left: 15px;
+  position: relative;
+  top: 10px;
+  left: 4%;
+}
+
+.infobar {
+  width: 90%;
+  height: 250px;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  margin: auto; /* Center */
+  justify-content: space-around;
+}
+
+h3 {
+  font-family: 'Trirong', serif;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #90f0b3;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateX(-25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-circle {
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border-radius: 50%;
+  /* Center the number in it */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  font-family: 'Trirong', serif;
+  font-size: 40px;
+}
+
+/* Center the circle directly under total hours */
+.hours-circle-adjustment {
+  transform: translateX(-15%);
+}
+
+/* Center the circle directly under total tasks */
+.tasks-circle-adjustment {
+  transform: translateX(-16%);
+}
+
+.question-mark {
+  width: 10px;
+  height: 10px;
+}
+
+/* Help tips */
+.block {
+  width: 150px;
+  height: 100px;
+  background-color: black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  display: none;
+  margin-left: 1%;
+  color: white;
+  font-size: 12px;
+}
+
+.block p {
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+sup:hover .block {
+  display: inline;
+  position: absolute;
+}
+
+.task-box {
+  width: 500px;
+  height: 250px;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  float: left;
+  margin-left: 5%;
+  display: grid;
+}
+
+.daily-task {
+  font-family: 'Trirong', serif;
+  font-size: 20px;
+  position: relative;
+  top: 5%;
+  margin-left: 3%;
+}
+
+.nearby-environmental {
+  display: flex;
+  position: relative;
+  margin-top: -4.5%;
+  margin-right: 23%;
+  float: right;
+}
+
+.map {
+  width: 750px;
+  height: 300px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  position: relative;
+  float: right;
+  margin-right: 5%;
+}
+
+h1 {
+  font-family: 'Trirong', serif;
+}
+
+form {
+  margin-top: 2%;
+  margin-left: 5%;
+  display: grid;
+}
+
+.form-font {
+  font-family: 'Trirong', serif;
+  font-size: 20px;
+}
+
+.default-option {
+  display: none;
+}
+
+.input-space {
+  width: 100px;
+  height: 20px;
+  margin-left: 2px;
+}
+
+.space {
+  margin-top: 2%;
+}
+
+.submit {
+  width: 70px;
+  margin-left: 2px;
+  margin-top: 5%;
+}
+
+#sign-up-form {
+  width: 500px;
+  height: 500px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#overlay {
+  width: 100%;
+  height: 111vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 2;
+}
+
+.title {
+  text-align: center;
+}
+
+#username {
+  width: 250px;
+  height: 30px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#password {
+  width: 250px;
+  height: 30px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.signup-label {
+  font-family: 'Trirong', serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.forgot-pw {
+  margin-left: 10px;
+}
+
+button {
+  width: 450px;
+  height: 30px;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: #28d45d;
+  border: 0;
+}
+
+.exit {
+  margin-left: 10px;
+  font-size: 25px;
+  color: white;
+  user-select: none;
+}
